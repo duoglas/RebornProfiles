@@ -16,11 +16,11 @@
 					<TeleportTo Name="155 " AetheryteId="23"/>
 				</If>			
 				<FlyTo XYZ="-443.8516, 211, -233.8817" land="true"/>
-				<ExPickupGuildLeve leveIds="652" leveType="Battlecraft" npcId="1002401" npcLocation="-441.1231,211,-235.5231" Timeout="5" /> <!-- The Area's a Bit Sketchy -->
+				<ExPickupGuildLeve leveIds="652" leveType="佣兵任务" npcId="1002401" npcLocation="-441.1231,211,-235.5231" Timeout="5" /> <!-- The Area's a Bit Sketchy -->
 				<If Condition="not ExBuddy.Windows.GuildLeve.HasLeve(652)">
-					<ExPickupGuildLeve leveIds="651" leveType="Battlecraft" npcId="1002401" npcLocation="-441.1231,211,-235.5231" Timeout="5" /> <!-- You Look Good Enough To Eat -->				
+					<ExPickupGuildLeve leveIds="651" leveType="佣兵任务" npcId="1002401" npcLocation="-441.1231,211,-235.5231" Timeout="5" /> <!-- You Look Good Enough To Eat -->				
 						<If Condition="not ExBuddy.Windows.GuildLeve.HasLeve(651)">
-							<ExPickupGuildLeve leveIds="650" leveType="Battlecraft" npcId="1002401" npcLocation="-441.1231,211,-235.5231" Timeout="5" /> <!-- Got a Gut Feeling about This -->
+							<ExPickupGuildLeve leveIds="650" leveType="佣兵任务" npcId="1002401" npcLocation="-441.1231,211,-235.5231" Timeout="5" /> <!-- Got a Gut Feeling about This -->
 						</If>
 				</If>
 			</If>	

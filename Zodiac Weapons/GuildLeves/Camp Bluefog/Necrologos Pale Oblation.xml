@@ -14,9 +14,9 @@
 			<Log Message="Loaded Necrologos: Pale Oblation Leve Version 1.0" />
 			<If Condition="not ExBuddy.Windows.GuildLeve.HasLeve(644)">
 				<GetTo ZoneId="147" XYZ="33.91326, 4.68145, 399.2563"/>
-				<ExPickupGuildLeve leveIds="644" leveType="Battlecraft" npcId="1002398" npcLocation="33.91326, 4.68145, 399.2563" Timeout="5" /> <!-- Necrologos: Pale Oblation -->
+				<ExPickupGuildLeve leveIds="644" leveType="佣兵任务" npcId="1002398" npcLocation="33.91326, 4.68145, 399.2563" Timeout="5" /> <!-- Necrologos: Pale Oblation -->
 				<If Condition="not ExBuddy.Windows.GuildLeve.HasLeve(644)">
-					<ExPickupGuildLeve leveIds="646" leveType="Battlecraft" npcId="1002398" npcLocation="33.91326, 4.68145, 399.2563" Timeout="5" /> <!-- Circling the Ceruleum -->
+					<ExPickupGuildLeve leveIds="646" leveType="佣兵任务" npcId="1002398" npcLocation="33.91326, 4.68145, 399.2563" Timeout="5" /> <!-- Circling the Ceruleum -->
 				</If>	
 			</If>	
 

@@ -15,7 +15,7 @@
 	<While condition="not ActionManager.KnownBlueMageSpells.ContainsKey(18300)">
 		<If Condition="not ExBuddy.Windows.GuildLeve.HasLeve(903)">
 			<LisbethTravel Area="Ishgard (Foundation)" Position="-55.46103, 15.14058, -41.67292"/>
-			<ExPickupGuildLeve leveIds="903" leveType="Battlecraft" npcId="1011208" npcLocation="-53.54395,15.19559,-42.67957" Timeout="5" />
+			<ExPickupGuildLeve leveIds="903" leveType="佣兵任务" npcId="1011208" npcLocation="-53.54395,15.19559,-42.67957" Timeout="5" />
 		</If>
 		
 		<If Condition="ExBuddy.Windows.GuildLeve.HasLeve(903)">

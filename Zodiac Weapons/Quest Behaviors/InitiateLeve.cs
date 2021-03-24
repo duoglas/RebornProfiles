@@ -67,11 +67,11 @@ namespace ff14bot.NeoProfiles
 			int agent = AgentModule.FindAgentIdByVtable(SearchResult);
 			AgentModule.ToggleAgentInterfaceById(agent); 
 			await Coroutine.Sleep(500);
-			AtkAddonControl windowByName = RaptureAtkUnitManager.GetWindowByName("JournalDetail");
+			AtkAddonControl windowByName = RaptureAtkUnitManager.GetWindowByName("日志");
 			while (windowByName == null)
 			{
 				await Coroutine.Sleep(500);
-				windowByName = RaptureAtkUnitManager.GetWindowByName("JournalDetail");
+				windowByName = RaptureAtkUnitManager.GetWindowByName("日志");
 			}
 			if (windowByName != null)
 			{
@@ -97,7 +97,7 @@ namespace ff14bot.NeoProfiles
 						}
 					}
 				}
-				windowByName = RaptureAtkUnitManager.GetWindowByName("JournalDetail");
+				windowByName = RaptureAtkUnitManager.GetWindowByName("日志");
 				if (windowByName != null)
 				{
 					AgentModule.ToggleAgentInterfaceById(agent); 

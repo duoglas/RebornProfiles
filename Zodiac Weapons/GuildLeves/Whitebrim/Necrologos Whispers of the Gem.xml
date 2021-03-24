@@ -13,11 +13,11 @@
 	<Order>	
 			<If Condition="not ExBuddy.Windows.GuildLeve.HasLeve(649)">
 				<LisbethTravel Area="Coerthas Central Highlands" Position="-444.7947, 211, -231.8197"/>
-				<ExPickupGuildLeve leveIds="649" leveType="Battlecraft" npcId="1002401" npcLocation="-441.1231,211,-235.5231" Timeout="5" /> <!-- Necrologos: Whispers of the Gem -->
+				<ExPickupGuildLeve leveIds="649" leveType="佣兵任务" npcId="1002401" npcLocation="-441.1231,211,-235.5231" Timeout="5" /> <!-- Necrologos: Whispers of the Gem -->
 				<If Condition="not ExBuddy.Windows.GuildLeve.HasLeve(649)">
-					<ExPickupGuildLeve leveIds="651" leveType="Battlecraft" npcId="1002401" npcLocation="-441.1231,211,-235.5231" Timeout="5" /> <!-- You Look Good Enough To Eat -->				
+					<ExPickupGuildLeve leveIds="651" leveType="佣兵任务" npcId="1002401" npcLocation="-441.1231,211,-235.5231" Timeout="5" /> <!-- You Look Good Enough To Eat -->				
 						<If Condition="not ExBuddy.Windows.GuildLeve.HasLeve(650)">
-							<ExPickupGuildLeve leveIds="650" leveType="Battlecraft" npcId="1002401" npcLocation="-441.1231,211,-235.5231" Timeout="5" /> <!-- Got a Gut Feeling about This -->
+							<ExPickupGuildLeve leveIds="650" leveType="佣兵任务" npcId="1002401" npcLocation="-441.1231,211,-235.5231" Timeout="5" /> <!-- Got a Gut Feeling about This -->
 						</If>				
 				</If>
 			</If>	

@@ -13,9 +13,9 @@
 	<Order>	
 			<If Condition="not ExBuddy.Windows.GuildLeve.HasLeve(645)">
 				<GetTo ZoneId="147" XYZ="33.91326, 4.68145, 399.2563"/>
-				<ExPickupGuildLeve leveIds="645" leveType="Battlecraft" npcId="1002398" npcLocation="33.91326, 4.68145, 399.2563" Timeout="5" /> <!-- Necrologos: Pale Oblation -->
+				<ExPickupGuildLeve leveIds="645" leveType="佣兵任务" npcId="1002398" npcLocation="33.91326, 4.68145, 399.2563" Timeout="5" /> <!-- Necrologos: Pale Oblation -->
 				<If Condition="not ExBuddy.Windows.GuildLeve.HasLeve(645)">
-					<ExPickupGuildLeve leveIds="644" leveType="Battlecraft" npcId="1002398" npcLocation="33.91326, 4.68145, 399.2563" Timeout="5" /> <!-- Circling the Ceruleum -->
+					<ExPickupGuildLeve leveIds="644" leveType="佣兵任务" npcId="1002398" npcLocation="33.91326, 4.68145, 399.2563" Timeout="5" /> <!-- Circling the Ceruleum -->
 				</If>	
 			</If>	
 

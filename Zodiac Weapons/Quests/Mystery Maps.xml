@@ -250,7 +250,7 @@
 	  </CodeChunk>
 		<CodeChunk Name="OpenMap">
             <![CDATA[ 
-				var bagslot = InventoryManager.FilledSlots.First(i => i.Name.Contains("Mysterious"));
+				var bagslot = InventoryManager.FilledSlots.First(i => i.Name.Contains("神秘地图"));
 				LlamaLibrary.Helpers.ActionHelper.DoActionDecipher(bagslot);
 				await Coroutine.Sleep(3000);
         	]]>			
