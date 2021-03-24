@@ -236,12 +236,12 @@
 				await Buddy.Coroutines.Coroutine.Sleep(500);
 				if (ff14bot.RemoteWindows.SelectIconString.IsOpen)
 				{
-					Logging.WriteDiagnostic("Selecting 'Relic Weapon Novus Soulglazing'.");
-					SelectIconString.ClickLineContains("Relic Weapon Novus Soulglazing");
+					Logging.WriteDiagnostic("Selecting '绝灵化'.");
+					SelectIconString.ClickLineContains("绝灵化");
 				}
 				else
 				{
-					Logging.WriteDiagnostic("Relic Weapon Novus Soulglazing window failed to open.");
+					Logging.WriteDiagnostic("绝灵化 window failed to open.");
 					ff14bot.TreeRoot.Stop("Window failed to open");
 				}		  
 		  
@@ -299,12 +299,12 @@
 				await Buddy.Coroutines.Coroutine.Sleep(500);
 				if (ff14bot.RemoteWindows.SelectIconString.IsOpen)
 				{
-					Logging.WriteDiagnostic("Selecting 'Relic Weapon Novus Soulglazing'.");
-					SelectIconString.ClickLineContains("Relic Weapon Novus Soulglazing");
+					Logging.WriteDiagnostic("Selecting '绝灵化'.");
+					SelectIconString.ClickLineContains("绝灵化");
 				}
 				else
 				{
-					Logging.WriteDiagnostic("Relic Weapon Novus Soulglazing window failed to open.");
+					Logging.WriteDiagnostic("绝灵化 window failed to open.");
 					ff14bot.TreeRoot.Stop("Window failed to open");
 				}		  
 		  
