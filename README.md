@@ -1,3 +1,9 @@
+# FORK by duoglas
+modifed for CN
+为中国服务器做了修改
+
+
+
 ## RebornProfiles
 Inisde you will find various profiles to be used wit RebornBuddy's OrderBot to do many different things in FFXIV.
 
