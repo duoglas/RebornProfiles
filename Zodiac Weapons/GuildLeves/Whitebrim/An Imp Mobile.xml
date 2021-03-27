@@ -13,9 +13,9 @@
 	<Order>	
 			<If Condition="not ExBuddy.Windows.GuildLeve.HasLeve(849)">
 				<LisbethTravel Area="Coerthas Central Highlands" Position="-466.4981, 211, -232.1504"/>
-				<ExPickupGuildLeve leveIds="849" leveType="Maelstrom" npcId="1007069" npcLocation="-476.2188,211,-233.4173" Timeout="5" /> <!-- An Imp Mobile -->
+				<ExPickupGuildLeve leveIds="849" leveType="黑涡团" npcId="1007069" npcLocation="-476.2188,211,-233.4173" Timeout="5" /> <!-- An Imp Mobile -->
 				<If Condition="not ExBuddy.Windows.GuildLeve.HasLeve(849)">
-					<ExPickupGuildLeve leveIds="850" leveType="Maelstrom" npcId="1007069" npcLocation="-476.2188,211,-233.4173" Timeout="5" /> <!-- Papal Dispensation -->				
+					<ExPickupGuildLeve leveIds="850" leveType="黑涡团" npcId="1007069" npcLocation="-476.2188,211,-233.4173" Timeout="5" /> <!-- Papal Dispensation -->				
 				</If>
 			</If>	
 

@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Linq;
+using System.Diagnostics;
 using System;
 using Buddy.Coroutines;
 using Clio.Utilities;
@@ -12,6 +13,7 @@ using ff14bot.Managers;
 using ff14bot.RemoteWindows;
 using ff14bot.Enums;
 using ff14bot.Helpers;
+using ff14bot;
 using TreeSharp;
 
 namespace ff14bot.NeoProfiles
@@ -62,16 +64,20 @@ namespace ff14bot.NeoProfiles
 				// await Coroutine.Wait(20000, () => !Core.Player.IsMounted);
 				// await Coroutine.Sleep(500);
 			// }
+			Logging.Write("321123321123321123ZZZZZZZZZZZZZZZZZZZZZZZZZ");
+
+
 			var patternFinder = new GreyMagic.PatternFinder(Core.Memory);
 			IntPtr SearchResult = patternFinder.Find("48 8D 05 ? ? ? ? 48 89 54 24 ? 48 89 03 Add 3 TraceRelative");
 			int agent = AgentModule.FindAgentIdByVtable(SearchResult);
 			AgentModule.ToggleAgentInterfaceById(agent); 
 			await Coroutine.Sleep(500);
-			AtkAddonControl windowByName = RaptureAtkUnitManager.GetWindowByName("日志");
+
+			AtkAddonControl windowByName = RaptureAtkUnitManager.GetWindowByName("JournalDetail");
 			while (windowByName == null)
 			{
 				await Coroutine.Sleep(500);
-				windowByName = RaptureAtkUnitManager.GetWindowByName("日志");
+				windowByName = RaptureAtkUnitManager.GetWindowByName("JournalDetail");
 			}
 			if (windowByName != null)
 			{
@@ -83,7 +89,8 @@ namespace ff14bot.NeoProfiles
 						if(leve.GlobalId == LeveId && leve.Step == 1)
 						{
 							ulong globalId = (ulong) leve.GlobalId;
-							windowByName.SendAction(3,3,0xD,3,globalId,3,2); //Set Quest
+							windowByName.SendAction(3,3,0xD,3,globalId,2,2); //Set Quest
+		
 							await Coroutine.Sleep(200);
 							windowByName.SendAction(2,3,4,4,globalId); //Initiate
 							if (await Coroutine.Wait(10000, () => SelectYesno.IsOpen))
@@ -97,7 +104,7 @@ namespace ff14bot.NeoProfiles
 						}
 					}
 				}
-				windowByName = RaptureAtkUnitManager.GetWindowByName("日志");
+				windowByName = RaptureAtkUnitManager.GetWindowByName("JournalDetail");
 				if (windowByName != null)
 				{
 					AgentModule.ToggleAgentInterfaceById(agent); 

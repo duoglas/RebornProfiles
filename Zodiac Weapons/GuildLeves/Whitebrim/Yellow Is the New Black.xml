@@ -13,9 +13,9 @@
 	<Order>	
 			<If Condition="not ExBuddy.Windows.GuildLeve.HasLeve(853)">
 				<LisbethTravel Area="Coerthas Central Highlands" Position="-466.4981, 211, -232.1504"/>
-				<ExPickupGuildLeve leveIds="853" leveType="Order" npcId="1007069" npcLocation="-476.2188,211,-233.4173" Timeout="5" /> <!-- Yellow Is the New Black -->
+				<ExPickupGuildLeve leveIds="853" leveType="双蛇党" npcId="1007069" npcLocation="-476.2188,211,-233.4173" Timeout="5" /> <!-- Yellow Is the New Black -->
 				<If Condition="not ExBuddy.Windows.GuildLeve.HasLeve(853)">
-					<ExPickupGuildLeve leveIds="854" leveType="Order" npcId="1007069" npcLocation="-476.2188,211,-233.4173" Timeout="5" /> <!-- Talk to My Voidsent -->				
+					<ExPickupGuildLeve leveIds="854" leveType="双蛇党" npcId="1007069" npcLocation="-476.2188,211,-233.4173" Timeout="5" /> <!-- Talk to My Voidsent -->				
 				</If>
 			</If>	
 

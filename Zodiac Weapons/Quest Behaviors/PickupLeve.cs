@@ -124,7 +124,7 @@ namespace ff14bot.NeoProfiles
         {
             foreach (var foundwindow in RaptureAtkUnitManager.GetRawControls)
 			{
-				if(foundwindow.Name == "GuildLeve")
+				if(foundwindow.Name == "理符任务")
 				{
 					return true;
 				}
@@ -137,7 +137,7 @@ namespace ff14bot.NeoProfiles
 		{
 			get
 			{
-				return RaptureAtkUnitManager.GetRawControls.Any(r => r.Name == "GuildLeve");
+				return RaptureAtkUnitManager.GetRawControls.Any(r => r.Name == "理符任务");
 			}
 		}
 
@@ -147,7 +147,7 @@ namespace ff14bot.NeoProfiles
 			// Pair 1 is unknown
 			// Pair 2 is unknown
 			// Pair 3 is the leve number
-			RaptureAtkUnitManager.GetWindowByName("GuildLeve").SendAction(2, 3, 3, 4, leve);
+			RaptureAtkUnitManager.GetWindowByName("理符任务").SendAction(2, 3, 3, 4, leve);
 		}
 		
 		public static void Close()
@@ -156,7 +156,7 @@ namespace ff14bot.NeoProfiles
 			// Pair 1 is unknown
 			if(IsOpen)
 			{
-				RaptureAtkUnitManager.GetWindowByName("GuildLeve").SendAction(1, 3, 0xFFFFFFFF);
+				RaptureAtkUnitManager.GetWindowByName("理符任务").SendAction(1, 3, 0xFFFFFFFF);
 			}
 		}
 	

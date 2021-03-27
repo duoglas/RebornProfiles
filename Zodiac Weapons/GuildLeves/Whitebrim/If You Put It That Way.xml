@@ -13,9 +13,9 @@
 	<Order>	
 			<If Condition="not ExBuddy.Windows.GuildLeve.HasLeve(860)">
 				<LisbethTravel Area="Coerthas Central Highlands" Position="-466.4981, 211, -232.1504"/>
-				<ExPickupGuildLeve leveIds="860" leveType="Immortal" npcId="1007069" npcLocation="-476.2188,211,-233.4173" Timeout="5" /> <!-- If You Put It That Way -->
+				<ExPickupGuildLeve leveIds="860" leveType="恒辉队" npcId="1007069" npcLocation="-476.2188,211,-233.4173" Timeout="5" /> <!-- If You Put It That Way -->
 				<If Condition="not ExBuddy.Windows.GuildLeve.HasLeve(860)">
-					<ExPickupGuildLeve leveIds="858" leveType="Immortal" npcId="1007069" npcLocation="-476.2188,211,-233.4173" Timeout="5" /> <!-- You Dropped Something -->				
+					<ExPickupGuildLeve leveIds="858" leveType="恒辉队" npcId="1007069" npcLocation="-476.2188,211,-233.4173" Timeout="5" /> <!-- You Dropped Something -->				
 				</If>
 			</If>	
 

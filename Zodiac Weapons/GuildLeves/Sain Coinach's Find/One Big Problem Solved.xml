@@ -13,9 +13,9 @@
 	<Order>	
 			<If Condition="not ExBuddy.Windows.GuildLeve.HasLeve(863)">
 				<LisbethTravel Area="Mor Dhona" Position="461.1251, -4.846787, -472.2902"/>
-				<ExPickupGuildLeve leveIds="863" leveType="Maelstrom" npcId="1007070" npcLocation="464.5914,-4.057395,-467.4297" Timeout="5" /> <!-- One Big Problem Solved -->
+				<ExPickupGuildLeve leveIds="863" leveType="黑涡团" npcId="1007070" npcLocation="464.5914,-4.057395,-467.4297" Timeout="5" /> <!-- One Big Problem Solved -->
 				<If Condition="not ExBuddy.Windows.GuildLeve.HasLeve(863)">
-					<ExPickupGuildLeve leveIds="865" leveType="Maelstrom" npcId="1007070" npcLocation="464.5914,-4.057395,-467.4297" Timeout="5" /> <!-- Go Home to Mama -->				
+					<ExPickupGuildLeve leveIds="865" leveType="黑涡团" npcId="1007070" npcLocation="464.5914,-4.057395,-467.4297" Timeout="5" /> <!-- Go Home to Mama -->				
 				</If>
 			</If>	
 

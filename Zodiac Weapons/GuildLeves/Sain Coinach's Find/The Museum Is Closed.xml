@@ -13,9 +13,9 @@
 	<Order>	
 			<If Condition="not ExBuddy.Windows.GuildLeve.HasLeve(875)">
 				<LisbethTravel Area="Mor Dhona" Position="461.1251, -4.846787, -472.2902"/>
-				<ExPickupGuildLeve leveIds="875" leveType="Immortal" npcId="1007070" npcLocation="464.5914,-4.057395,-467.4297" Timeout="5" /> <!-- The Museum Is Closed -->
+				<ExPickupGuildLeve leveIds="875" leveType="恒辉队" npcId="1007070" npcLocation="464.5914,-4.057395,-467.4297" Timeout="5" /> <!-- The Museum Is Closed -->
 				<If Condition="not ExBuddy.Windows.GuildLeve.HasLeve(875)">
-					<ExPickupGuildLeve leveIds="873" leveType="Immortal" npcId="1007070" npcLocation="464.5914,-4.057395,-467.4297" Timeout="5" /> <!-- Who Writes History -->				
+					<ExPickupGuildLeve leveIds="873" leveType="恒辉队" npcId="1007070" npcLocation="464.5914,-4.057395,-467.4297" Timeout="5" /> <!-- Who Writes History -->				
 				</If>
 			</If>	
 
